@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'a_campus_grave';
+	src: url('../fonts/a_campus_grav.ttf');
+}
+
+/*2*/
+body {
+    background: #f8f8f8;
+}
+
+/*3.a*/
+.main_menu li a {
+	color: green;
+	font-size: 24px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/*3.b*/
+.main_menu {
+	list-style: none;
+}
+
+/*4.a*/
+body.product h2:not(.non_header) {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+}
+
+/*4.b*/
+body.product .short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/*4.c*/
+body.product .full_description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/*4.c.i*/
+body.product ul.tech_properties {
+	color: blue;
+	font-style: italic;
+}
+
+/*4.c.ii*/
+body.product ul.tech_properties > li {
+	list-style: none;
+	background: url(../images/checkbox.png) no-repeat left top;
+	background-size: 1.5%;
+	padding-left: 25px;
+}
+
+/* 5 */
+form.contact_form input[type="text"], input[type="email"] {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 20px;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+form.contact_form textarea {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 250px;
+	font-size: 15px;
+	font-style: italic;
+}
+
+/* 6 */
+body.product img {
+	border: 2px solid #B80F0A;
+}
+
+/* 7.i. Company's name header */
+div.company_name {
+	color: green;
+	font-family: a_campus_grave, fantasy;
+	font-size: 42px;
+}
+
+/* 7.ii. image sizes */
+img[alt="router1"] {
+	width: 200px;
+	height: 200px;
+}
+
+img[alt="router2"] {
+	width: 350px;
+	height: 200px;
+}
+
+img[alt="router3"] {
+	width: 200px;
+	height: 200px;
+}
+
+/* Red copyright */
+.copyright {
+	font-weight: 900;
+	color: red;
+}
