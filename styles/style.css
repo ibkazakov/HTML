@@ -3,6 +3,11 @@
 	src: url('../fonts/a_campus_grav.ttf');
 }
 
+@font-face {
+	font-family: 'goth';
+	src: url('../fonts/goth.ttf');
+}
+
 /*2*/
 body {
     background: #f8f8f8;
@@ -59,7 +64,7 @@ body.product ul.tech_properties > li {
 	padding-left: 25px;
 }
 
-/* 5 */
+/* 5  + lesson-5.5 capitalize-transform*/
 form.contact_form input[type="text"], input[type="email"] {
 	background-color: black;
 	color: white;
@@ -67,6 +72,7 @@ form.contact_form input[type="text"], input[type="email"] {
 	height: 20px;
 	font-size: 15px;
 	font-weight: bolder;
+	text-transform: capitalize;
 }
 
 form.contact_form textarea {
@@ -76,15 +82,16 @@ form.contact_form textarea {
 	height: 250px;
 	font-size: 15px;
 	font-style: italic;
+	text-transform: capitalize;
 }
 
 /* 6 */
-body.product img {
+body.product img.router_image {
 	border: 2px solid #B80F0A;
 }
 
 /* 7.i. Company's name header */
-div.company_name {
+.company_name {
 	color: green;
 	font-family: a_campus_grave, fantasy;
 	font-size: 42px;
@@ -107,7 +114,49 @@ img[alt="router3"] {
 }
 
 /* Red copyright */
-.copyright {
-	font-weight: 900;
+.footer .copyright {
 	color: red;
+	line-height: 50px;
+}
+
+/* lesson-5 */
+
+/* 1 hover links in menu */
+
+.main_menu li a:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+/* 2 head logo img size */
+.header > img[alt="router_logo"] {
+	width: 50px;
+	height: 50px;
+}
+
+/* 3 footer's background */
+.footer {
+	background: rgba(0, 0, 255, 0.1);
+	height: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* 4 input colored text in form */
+form.contact_form input[type="email"]:focus {
+	background: yellow;
+	color: black;
+}
+
+/* 7 border disappear */
+body.product img.router_image:hover {
+	border-color: transparent;
+}
+
+/* 8 first letters in descriptions */
+body.product .short_description:first-letter,
+body.product .full_description:first-letter {
+	color: purple;
+	font-size: 45px;
+	font-family: goth, arial;
 }
