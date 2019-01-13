@@ -1,0 +1,162 @@
+@font-face {
+	font-family: 'a_campus_grave';
+	src: url('../fonts/a_campus_grav.ttf');
+}
+
+@font-face {
+	font-family: 'goth';
+	src: url('../fonts/goth.ttf');
+}
+
+/*2*/
+body {
+    background: #f8f8f8;
+}
+
+/*3.a*/
+.main_menu li a {
+	color: green;
+	font-size: 24px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/*3.b*/
+.main_menu {
+	list-style: none;
+}
+
+/*4.a*/
+body.product h2:not(.non_header) {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+}
+
+/*4.b*/
+body.product .short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/*4.c*/
+body.product .full_description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/*4.c.i*/
+body.product ul.tech_properties {
+	color: blue;
+	font-style: italic;
+}
+
+/*4.c.ii*/
+body.product ul.tech_properties > li {
+	list-style: none;
+	background: url(../images/checkbox.png) no-repeat left top;
+	background-size: 1.5%;
+	padding-left: 25px;
+}
+
+/* 5  + lesson-5.5 capitalize-transform*/
+form.contact_form input[type="text"], input[type="email"] {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 20px;
+	font-size: 15px;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+form.contact_form textarea {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 250px;
+	font-size: 15px;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+/* 6 */
+body.product img.router_image {
+	border: 2px solid #B80F0A;
+}
+
+/* 7.i. Company's name header */
+.company_name {
+	color: green;
+	font-family: a_campus_grave, fantasy;
+	font-size: 42px;
+}
+
+/* 7.ii. image sizes */
+img[alt="router1"] {
+	width: 200px;
+	height: 200px;
+}
+
+img[alt="router2"] {
+	width: 350px;
+	height: 200px;
+}
+
+img[alt="router3"] {
+	width: 200px;
+	height: 200px;
+}
+
+/* Red copyright */
+.footer .copyright {
+	color: red;
+	line-height: 50px;
+}
+
+/* lesson-5 */
+
+/* 1 hover links in menu */
+
+.main_menu li a:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+/* 2 head logo img size */
+.header > img[alt="router_logo"] {
+	width: 50px;
+	height: 50px;
+}
+
+/* 3 footer's background */
+.footer {
+	background: rgba(0, 0, 255, 0.1);
+	height: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* 4 input colored text in form */
+form.contact_form input[type="email"]:focus {
+	background: yellow;
+	color: black;
+}
+
+/* 7 border disappear */
+body.product img.router_image:hover {
+	border-color: transparent;
+}
+
+/* 8 first letters in descriptions */
+body.product .short_description:first-letter,
+body.product .full_description:first-letter {
+	color: purple;
+	font-size: 45px;
+	font-family: goth, arial;
+}
