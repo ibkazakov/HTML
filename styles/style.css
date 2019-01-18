@@ -1,0 +1,257 @@
+@font-face {
+	font-family: 'goth';
+	src: url('../fonts/goth.ttf');
+}
+
+/*2*/
+body {
+    background: #f8f8f8;
+}
+
+/*3.a*/
+.main_menu li a {
+	color: #49423d;
+	font-size: 24px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/*3.b*/
+.main_menu {
+	list-style: none;
+}
+
+/*4.a*/
+body.product h2:not(.non_header) {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+}
+
+/*4.b*/
+body.product .short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/*4.c*/
+body.product .full_description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/*4.c.i*/
+body.product ul.tech_properties {
+	color: blue;
+	font-style: italic;
+}
+
+/*4.c.ii*/
+body.product ul.tech_properties > li {
+	list-style: none;
+	background: url(../images/checkbox.png) no-repeat left top;
+	background-size: 1.5%;
+	padding-left: 25px;
+}
+
+/* 5  + lesson-5.5 capitalize-transform*/
+form.contact_form input[type="text"], input[type="email"] {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 20px;
+	font-size: 15px;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+form.contact_form textarea {
+	background-color: black;
+	color: white;
+	width: 450px;
+	height: 250px;
+	font-size: 15px;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+/* 6 */
+body.product img.router_image {
+	border: 2px solid #B80F0A;
+}
+
+/* 7.i. Company's name header */
+.company_name {
+	color: #203a27;
+	font-family: arial, sans-serif;
+	font-size: 42px;
+}
+
+/* 7.ii. image sizes */
+img[alt="router1"] {
+	width: 200px;
+	height: 200px;
+}
+
+img[alt="router2"] {
+	width: 350px;
+	height: 200px;
+}
+
+img[alt="router3"] {
+	width: 200px;
+	height: 200px;
+}
+
+/* Red copyright */
+.footer .copyright {
+	color: red;
+}
+
+/* lesson-5 */
+
+/* 1 hover links in menu */
+
+.main_menu li a:hover {
+	color: #002137;
+	font-weight: bold;
+}
+
+/* 2 head logo img size */
+.header > img[alt="router_logo"] {
+	width: 50px;
+	height: 50px;
+}
+
+/* 3 footer's background + footer's height + padding. lesson 6-2 */
+.footer {
+	background: rgba(39, 78, 125, 0.46);;
+	height: 100px;
+	text-align: right;
+	font-weight: bold;
+	padding: 20px 20px 0 0
+}
+
+/* 4 input colored text in form */
+form.contact_form input[type="email"]:focus {
+	background: yellow;
+	color: black;
+}
+
+/* 7 border disappear */
+body.product img.router_image:hover {
+	border-color: transparent;
+}
+
+/* 8 first letters in descriptions */
+body.product .short_description:first-letter,
+body.product .full_description:first-letter {
+	color: purple;
+	font-size: 45px;
+	font-family: goth, sans-serif;
+}
+
+/* lesson 6 */
+
+/* 1.a */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 1.b */
+.header {
+    height: 166px;
+    position: relative;
+    background: url(../images/bg_header.jpg) repeat 100%;
+}
+
+/* 1.c */
+.header img {
+	margin: 10px 0px 0px 40px;
+}
+
+/* 1.d,e,f */
+.main_menu {
+	float: right;
+	margin-right: 15px;
+}
+
+.main_menu li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+/*3.a product float */
+.product_img_and_desc {
+	height: 210px;
+	margin-bottom: 15px;
+}
+
+.product_img_and_desc a {
+	float: left;
+}
+
+.product_img_and_desc .product_short_desc {
+	width: 500px;
+	float: right;
+}
+
+.product_img_and_desc::after {
+	clear: both;
+	display: block;
+    	content: '';
+}
+
+.product_img_and_desc h2 {
+	margin: 0;
+}
+
+/* 3.b, c */
+.product_img_and_desc .buy_button {
+	float: right;
+    	padding: 15px 25px;
+    	text-decoration: none;
+    	border-radius: 4px;
+    	font-family: sans-serif;
+    	color: white;
+    	font-weight: bold;
+	background: rgb(121,123,124);
+}
+
+.product_img_and_desc .buy_button:hover {
+	color: black;
+	background: yellow;
+}
+
+.product_img_and_desc .buy_button:active {
+	color: black;
+	background: #528426;
+}
+
+/* 4. a, b */
+
+.catalog_wrap:after {
+       display: block;
+       clear: both;
+       content: '';
+}
+
+.catalog_wrap .catalog_unit {
+	width: 480px;
+	height: 400px;
+	padding: 10px;
+	float: left;
+	margin-bottom: 40px;
+}
+
+/* 7. Contacts */
+.yandex_map {
+	width: 100%;
+	height: 374px;
+}
