@@ -1,9 +1,4 @@
 @font-face {
-	font-family: 'a_campus_grave';
-	src: url('../fonts/a_campus_grav.ttf');
-}
-
-@font-face {
 	font-family: 'goth';
 	src: url('../fonts/goth.ttf');
 }
@@ -15,7 +10,7 @@ body {
 
 /*3.a*/
 .main_menu li a {
-	color: green;
+	color: #49423d;
 	font-size: 24px;
 	font-style: italic;
 	text-decoration: none;
@@ -92,8 +87,8 @@ body.product img.router_image {
 
 /* 7.i. Company's name header */
 .company_name {
-	color: green;
-	font-family: a_campus_grave, fantasy;
+	color: #203a27;
+	font-family: arial, sans-serif;
 	font-size: 42px;
 }
 
@@ -116,7 +111,6 @@ img[alt="router3"] {
 /* Red copyright */
 .footer .copyright {
 	color: red;
-	line-height: 50px;
 }
 
 /* lesson-5 */
@@ -124,7 +118,7 @@ img[alt="router3"] {
 /* 1 hover links in menu */
 
 .main_menu li a:hover {
-	color: blue;
+	color: #002137;
 	font-weight: bold;
 }
 
@@ -134,12 +128,13 @@ img[alt="router3"] {
 	height: 50px;
 }
 
-/* 3 footer's background */
+/* 3 footer's background + footer's height + padding. lesson 6-2 */
 .footer {
-	background: rgba(0, 0, 255, 0.1);
-	height: 50px;
-	text-align: center;
+	background: rgba(39, 78, 125, 0.46);;
+	height: 100px;
+	text-align: right;
 	font-weight: bold;
+	padding: 20px 20px 0 0
 }
 
 /* 4 input colored text in form */
@@ -158,5 +153,105 @@ body.product .short_description:first-letter,
 body.product .full_description:first-letter {
 	color: purple;
 	font-size: 45px;
-	font-family: goth, arial;
+	font-family: goth, sans-serif;
+}
+
+/* lesson 6 */
+
+/* 1.a */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 1.b */
+.header {
+    height: 166px;
+    position: relative;
+    background: url(../images/bg_header.jpg) repeat 100%;
+}
+
+/* 1.c */
+.header img {
+	margin: 10px 0px 0px 40px;
+}
+
+/* 1.d,e,f */
+.main_menu {
+	float: right;
+	margin-right: 15px;
+}
+
+.main_menu li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+/*3.a product float */
+.product_img_and_desc {
+	height: 210px;
+	margin-bottom: 15px;
+}
+
+.product_img_and_desc a {
+	float: left;
+}
+
+.product_img_and_desc .product_short_desc {
+	width: 500px;
+	float: right;
+}
+
+.product_img_and_desc::after {
+	clear: both;
+	display: block;
+    	content: '';
+}
+
+.product_img_and_desc h2 {
+	margin: 0;
+}
+
+/* 3.b, c */
+.product_img_and_desc .buy_button {
+	float: right;
+    	padding: 15px 25px;
+    	text-decoration: none;
+    	border-radius: 4px;
+    	font-family: sans-serif;
+    	color: white;
+    	font-weight: bold;
+	background: rgb(121,123,124);
+}
+
+.product_img_and_desc .buy_button:hover {
+	color: black;
+	background: yellow;
+}
+
+.product_img_and_desc .buy_button:active {
+	color: black;
+	background: #528426;
+}
+
+/* 4. a, b */
+
+.catalog_wrap:after {
+       display: block;
+       clear: both;
+       content: '';
+}
+
+.catalog_wrap .catalog_unit {
+	width: 480px;
+	height: 400px;
+	padding: 10px;
+	float: left;
+	margin-bottom: 40px;
+}
+
+/* 7. Contacts */
+.yandex_map {
+	width: 100%;
+	height: 374px;
 }
